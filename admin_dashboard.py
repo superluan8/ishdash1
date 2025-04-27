@@ -7,7 +7,7 @@ from sqlalchemy import create_engine, text
 ADMIN_PASSWORD = "rhino123"
 
 # --- DATABASE CONNECTION ---
-engine = create_engine('sqlite:///quiz_results.db')
+engine = create_engine('sqlite:///adaptive_results.db')
 
 # --- AUTO-CREATE TABLE IF NOT EXIST ---
 with engine.begin() as connection:
