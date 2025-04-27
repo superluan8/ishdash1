@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text 
 
 # --- CONFIG ---
 ADMIN_PASSWORD = "rhino123"
