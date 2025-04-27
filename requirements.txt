@@ -1,4 +1,6 @@
 streamlit
 pandas
 sqlalchemy
-matplotlib
+gspread
+gspread_dataframe
+oauth2client
