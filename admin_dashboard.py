@@ -22,24 +22,6 @@ with engine.begin() as connection:
             test_date TEXT
         )
     '''))
-if df.empty:
-    st.warning("No results yet! Add some data to get started.")
-else:
-    st.dataframe(df)
-# --- FUNCTIONS ---
-@st.cache_data
-def load_results():
-    df = pd.read_sql('SELECT * FROM adaptive_results', con=engine)
-    df['timestamp'] = pd.to_datetime(df['timestamp'])
-    return df
-
-# --- DASHBOARD CONTENT ---
-st.title("📊 Admin Dashboard - Adaptive Math Quiz Results")
-
-df = load_results()
-
-
-
 
 # --- FUNCTIONS ---
 @st.cache_data
